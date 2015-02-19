@@ -3,5 +3,5 @@ Hello!  My name is David Johnson.  I like to do stuff like be [on the radio](htt
 I have some goals.  Mostly about learning.
 
 ---
-This information is for my usage while learning ikiwiki.
+This information is to help me learn ikiwiki.
 [[!map]]
