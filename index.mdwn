@@ -1,11 +1,7 @@
-- [wcbn](http://www.wcbn.org/)
-- [[radio]]
-- [twitter](http://www.twitter.com/radiodavidj/)
-- [gmail](http://gmail.com/)
-- Whatever you want, blah blah blah. But Social.
-- This is the second edit
-- This is the true git
-- does this git where it's supposed to go?
+Hello!  My name is David Johnson.  I like to do stuff like be [on the radio](http://www.wcbn.org/) and [go to work](http://www.perficient.com/).  I have been telling people what I'm doing with [this tool](http://www.twitter.com/radiodavidj) and sometimes other tools.
 
+I have some goals.  Mostly about learning.
 
+---
+This information is for my usage while learning ikiwiki.
 [[!map]]
