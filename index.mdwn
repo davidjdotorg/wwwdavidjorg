@@ -1,7 +1,37 @@
-Hello!  My name is David Johnson.  I like to do stuff like be [on the radio](http://www.wcbn.org/) and [go to work](http://www.perficient.com/).  I have been telling people what I'm doing with [this tool](http://www.twitter.com/radiodavidj) and sometimes other tools.
+<script type="text/javascript" src="ikiwiki/jquery.min.js"></script>
+
+Hello!  My name is David Johnson.  I like to do stuff like be [on the radio](http://www.wcbn.org/) and [go to work](http://www.perficient.com/).  
+
+The information here is sparse.  I am still working out the learning of the ikiwiki.
+
+You may have come here looking for the Funk Radio Show K and I did for our anniversary.  You can find the [first hour here](http://websittr.com/sf/wcbn-2015-03-06-2000-EST.mp3) and the more laughing, fun and danceable [second hour here](http://websittr.com/sf/wcbn-2015-03-06-2100-EST.mp3).
+
+My next time on the radio is Monday, March 23rd, from 6 to 9 am where I will be subbing for DWB's Slipstream Radio Show.
+
+I am working out the deets on going to [Self Conference](http://www.selfconference.org/).
+
+Things I want to do here:
+
+* Apply some more CSS.  (not very specific, eh?)
 
 I have some goals.  Mostly about learning.
 
----
-This information is to help me learn ikiwiki.
-[[!map]]
+<p>I most recently listened to <a href="" id="lastfmurl"><span id="lastfmname">nothing</span></a> by <span id="lastfmartist">nobody</span> from the album <span id="lastfmalbum">not known</span>.</p>
+
+<script type="text/javascript">
+    $(document).ready(
+        function() {
+            $.ajax({
+                datatype: "json",
+                url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6&format=json",
+                success: function(lastFM) {
+			var mostrecenttrack = lastFM.recenttracks.track[0];
+			$("#lastfmname").html(mostrecenttrack.name);
+			$("#lastfmartist").html(mostrecenttrack.artist['#text']);
+			$("#lastfmalbum").html(mostrecenttrack.album['#text']);
+			$("#lastfmurl").attr("href",mostrecenttrack.url);
+                }
+            })
+        }
+    );
+</script>
