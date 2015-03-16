@@ -23,9 +23,9 @@ I have some goals.  Mostly about learning.
         function() {
             $.ajax({
                 datatype: "json",
-                url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6&format=json",
+                url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6&limit=1&format=json",
                 success: function(lastFM) {
-			var mostrecenttrack = lastFM.recenttracks.track[0];
+			var mostrecenttrack = lastFM.recenttracks.track;
 			$("#lastfmname").html(mostrecenttrack.name);
 			$("#lastfmartist").html(mostrecenttrack.artist['#text']);
 			$("#lastfmalbum").html(mostrecenttrack.album['#text']);
