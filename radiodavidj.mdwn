@@ -1,0 +1,8 @@
+This is the home of David J on the radio.
+[[!inline
+rss=yes
+atom=yes
+pages="radiodavidj/* and !radiodavidj/*.mp3"
+description="David J on the radio"
+]]
+[[!meta title="David J on the Radio"]]
