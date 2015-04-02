@@ -1,4 +1,7 @@
 This is my music section
+
+I most recently listened to <a href="" id="lastfmurl"><span id="lastfmname">nothing</span></a> by <span id="lastfmartist">nobody</span> from the album <span id="lastfmalbum">not known</span>.
+
 <script type="text/javascript" src="ikiwiki/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(

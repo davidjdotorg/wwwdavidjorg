@@ -16,5 +16,3 @@ Things I want to do here:
 
 I have some goals.  Mostly about learning.
 
-<p>I most recently listened to <a href="" id="lastfmurl"><span id="lastfmname">nothing</span></a> by <span id="lastfmartist">nobody</span> from the album <span id="lastfmalbum">not known</span>.</p>
-
