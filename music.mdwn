@@ -1,1 +1,19 @@
 This is my music section
+<script type="text/javascript" src="ikiwiki/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(
+        function() {
+            $.ajax({
+                datatype: "json",
+                url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6&limit=2&format=json",
+                success: function(lastFM) {
+			var mostrecenttrack = lastFM.recenttracks.track[0];
+			$("#lastfmname").html(mostrecenttrack.name);
+			$("#lastfmartist").html(mostrecenttrack.artist['#text']);
+			$("#lastfmalbum").html(mostrecenttrack.album['#text']);
+			$("#lastfmurl").attr("href",mostrecenttrack.url);
+                }
+            })
+        }
+    );
+</script>
