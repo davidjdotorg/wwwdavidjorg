@@ -12,6 +12,7 @@ I am working out the deets on going to [Self Conference](http://www.selfconferen
 
 Things I want to do here:
 
+* Exploit the last.fm API to display my listened to tracks.
 * Apply some more CSS.  (not very specific, eh?)
 
 I have some goals.  Mostly about learning.
@@ -23,9 +24,9 @@ I have some goals.  Mostly about learning.
         function() {
             $.ajax({
                 datatype: "json",
-                url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6&limit=1&format=json",
+                url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6&limit=2&format=json",
                 success: function(lastFM) {
-			var mostrecenttrack = lastFM.recenttracks.track;
+			var mostrecenttrack = lastFM.recenttracks.track[0];
 			$("#lastfmname").html(mostrecenttrack.name);
 			$("#lastfmartist").html(mostrecenttrack.artist['#text']);
 			$("#lastfmalbum").html(mostrecenttrack.album['#text']);
