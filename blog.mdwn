@@ -1,0 +1,8 @@
+Thanks to an incessant desire to share my thoughts regardless who reads it, here are some writings.
+[[!inline
+rss=yes
+atom=yes
+pages="blog/*"
+description="Sporadic Foibles"
+]]
+[[!meta title="David J and his Sporadic Foibles"]]
