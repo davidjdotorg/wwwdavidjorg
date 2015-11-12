@@ -1,22 +1,36 @@
 This is my music section
 
-I most recently listened to <a href="" id="lastfmurl"><span id="lastfmname">nothing</span></a> by <span id="lastfmartist">nobody</span> from the album <span id="lastfmalbum">not known</span>.
+I often walk down sad roads.  This is the music that accompanies me.
+### The Smiths | Unloveable
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Cmi93WzVTEY" frameborder="0" allowfullscreen></iframe>
+### Cowboy Junkies | Lost My Driving Wheel
+<iframe width="420" height="315" src="https://www.youtube.com/embed/_e4FvUnEAq8" frameborder="0" allowfullscreen></iframe>
+### Trace Adkins | You're Gonna Miss This
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lBDN8yWyNYU" frameborder="0" allowfullscreen></iframe>
+### Steven Curtis Chapman | Cinderella
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nrWMBC6yoME" frameborder="0" allowfullscreen></iframe>
+### Joan Baez | Love Song To A Stranger
+<iframe width="420" height="315" src="https://www.youtube.com/embed/YX5v6D20w28" frameborder="0" allowfullscreen></iframe>
+### David Wilcox | Home Within Your Heart
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yJz3fxPErH8" frameborder="0" allowfullscreen></iframe>
+### Flaming Lips | Do You Realize?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YFq6wBHJ37k" frameborder="0" allowfullscreen></iframe>
+### Josh Ritter | Girl in the War (cover)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k6uH9iTH_To" frameborder="0" allowfullscreen></iframe>
+### Jeff Black | Nineteen
+<iframe width="420" height="315" src="https://www.youtube.com/embed/RUUZeAk-r58" frameborder="0" allowfullscreen></iframe>
+### India Arie | Heart of the Matter
+<iframe width="420" height="315" src="https://www.youtube.com/embed/4ClPiJuvSQo" frameborder="0" allowfullscreen></iframe>
+### Ani Difranco | Untouchable Face
+<iframe width="420" height="315" src="https://www.youtube.com/embed/rc4eYOhNnU8" frameborder="0" allowfullscreen></iframe>
+### Father John Misty | Bored In The USA
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JODshFyKHuA" frameborder="0" allowfullscreen></iframe>
+### Janis Ian | Society's Child
+<iframe width="420" height="315" src="https://www.youtube.com/embed/iEvQGMgBHbQ" frameborder="0" allowfullscreen></iframe>
+### Andrew Jackson Jihad | Linda Ronstadt
+<iframe width="420" height="315" src="https://www.youtube.com/embed/W_xJS2g2w1k" frameborder="0" allowfullscreen></iframe>
+### Cee Lo Green | River
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HKndv74U75c" frameborder="0" allowfullscreen></iframe>
+### The Reign of Kindo | Do You Realize?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZvL0DB615PE" frameborder="0" allowfullscreen></iframe>
 
-<script type="text/javascript" src="/ikiwiki/jquery.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(
-        function() {
-            $.ajax({
-                datatype: "json",
-                url: "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6&limit=2&format=json",
-                success: function(lastFM) {
-			var mostrecenttrack = lastFM.recenttracks.track[0];
-			$("#lastfmname").html(mostrecenttrack.name);
-			$("#lastfmartist").html(mostrecenttrack.artist['#text']);
-			$("#lastfmalbum").html(mostrecenttrack.album['#text']);
-			$("#lastfmurl").attr("href",mostrecenttrack.url);
-                }
-            })
-        }
-    );
-</script>
