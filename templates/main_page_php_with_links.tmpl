@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<TMPL_IF HTML_LANG_CODE><html lang="<TMPL_VAR HTML_LANG_CODE>" dir="<TMPL_VAR HTML_LANG_DIR>" xmlns="http://www.w3.org/1999/xhtml"><TMPL_ELSE><html xmlns="http://www.w3.org/1999/xhtml"></TMPL_IF>
 <head>
 <TMPL_IF DYNAMIC>
 <TMPL_IF FORCEBASEURL><base href="<TMPL_VAR FORCEBASEURL>" /><TMPL_ELSE>
@@ -136,11 +136,6 @@
 <TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
 
 <TMPL_IF ENCLOSURE>
-<TMPL_IF HTML5><section id="audio"><TMPL_ELSE><div id="audio"></TMPL_IF>
-<audio src="<TMPL_VAR ENCLOSURE>" preload="auto" controls="controls">
-Your browser does not support the <code>audio</code> element.
-</audio>
-<TMPL_IF_HTML5></section><TMPL_ELSE></div></TMPL_IF>
 <TMPL_IF HTML5><section id="enclosure"><TMPL_ELSE><div id="enclosure"></TMPL_IF>
 <a href="<TMPL_VAR ENCLOSURE>">Download</a>
 <TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
@@ -161,7 +156,6 @@ Your browser does not support the <code>audio</code> element.
 </TMPL_IF>
 </TMPL_UNLESS>
 
-</div>
 
 <TMPL_IF HTML5><footer<TMPL_ELSE><div</TMPL_IF> id="footer" class="pagefooter" role="contentinfo">
 <ul>

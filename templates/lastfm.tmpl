@@ -1,0 +1,12 @@
+<?php
+ $lastfmurl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6";
+ $lastfmxml = simplexml_load_file($lastfmurl);
+ $lastfmtrack =$lastfmxml->recenttracks->track;
+
+ if(strlen($lastfmtrack->artist) > 0)
+ {
+ echo "<p>The last song I may have listened to was:</p>";
+ echo "<div><div style=\"float:left;padding:7px;\"><img height=80 width=80 src='".$lastfmtrack->image[2]."'></div>";
+ echo "<div style=\"padding:7px;margin-left:5px;\">".$lastfmtrack->artist."<br>".$lastfmtrack->name."<br>".$lastfmtrack->album."</div></div>";
+ }
+?>

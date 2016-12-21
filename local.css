@@ -2,6 +2,40 @@ html, body {
 	font-family: Helvetica, Verdana;
 	}
 
+.actions {
+	visibility: hidden;
+	display: none;
+	}
+
+.header {
+	background: #eee;
+	background: -webkit-linear-gradient(left,#eee,#fff);
+	background: -o-linear-gradient(right,#eee,#fff);
+	background: -moz-linear-gradient(right,#eee,#fff);
+	background: linear-gradient(to right,#eee,#fff);
+	padding: 5px;
+	border-radius: 3px;
+	}
+
+.pagefooter ul {
+	padding:0;
+	list-style-type:none;
+	display:in-line;
+	margin-top:50px;
+	margin-bottom:0;
+	}
+
+.pagefooter ul li {
+	display:inline-block;
+	}
+
+.pagedate {
+	color:#999;
+	}
+
+#pageinfo {
+	border-top-color:#aaa;
+	}
 #enclosure a[href^="http:"]:after,
 #enclosure a[href^="https:"]:after,
 #inlineenclosure a[href^="http:"]:after,

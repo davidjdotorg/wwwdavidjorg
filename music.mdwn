@@ -1,6 +1,12 @@
 This is my music section
 
 I often walk down sad roads.  This is the music that accompanies me.
+### Enigma | Return To Innocence
+<iframe width="420" height="315" src="https://www.youtube.com/embed/Rk_sAHh9s08" frameborder="0" allowfullscreen></iframe>
+### Rosanne Cash | Blue Moon With Heartache
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LCEOUw4kf5g" frameborder="0" allowfullscreen></iframe>
+### Brett Dennen | It Could Make You Cry
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vFvSbo_LYwY" frameborder="0" allowfullscreen></iframe>
 ### The Smiths | Unloveable
 <iframe width="420" height="315" src="https://www.youtube.com/embed/Cmi93WzVTEY" frameborder="0" allowfullscreen></iframe>
 ### Cowboy Junkies | Lost My Driving Wheel
@@ -14,7 +20,7 @@ I often walk down sad roads.  This is the music that accompanies me.
 ### David Wilcox | Home Within Your Heart
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yJz3fxPErH8" frameborder="0" allowfullscreen></iframe>
 ### Flaming Lips | Do You Realize?
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YFq6wBHJ37k" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/lPXWt2ESxVY" frameborder="0" allowfullscreen></iframe>
 ### Josh Ritter | Girl in the War (cover)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/k6uH9iTH_To" frameborder="0" allowfullscreen></iframe>
 ### Jeff Black | Nineteen

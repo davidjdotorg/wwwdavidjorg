@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<TMPL_IF HTML_LANG_CODE><html lang="<TMPL_VAR HTML_LANG_CODE>" dir="<TMPL_VAR HTML_LANG_DIR>" xmlns="http://www.w3.org/1999/xhtml"><TMPL_ELSE><html xmlns="http://www.w3.org/1999/xhtml"></TMPL_IF>
 <head>
 <TMPL_IF DYNAMIC>
 <TMPL_IF FORCEBASEURL><base href="<TMPL_VAR FORCEBASEURL>" /><TMPL_ELSE>
@@ -136,11 +136,6 @@
 <TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
 
 <TMPL_IF ENCLOSURE>
-<TMPL_IF HTML5><section id="audio"><TMPL_ELSE><div id="audio"></TMPL_IF>
-<audio src="<TMPL_VAR ENCLOSURE>" preload="auto" controls="controls">
-Your browser does not support the <code>audio</code> element.
-</audio>
-<TMPL_IF_HTML5></section><TMPL_ELSE></div></TMPL_IF>
 <TMPL_IF HTML5><section id="enclosure"><TMPL_ELSE><div id="enclosure"></TMPL_IF>
 <a href="<TMPL_VAR ENCLOSURE>">Download</a>
 <TMPL_IF HTML5></section><TMPL_ELSE></div></TMPL_IF>
@@ -161,6 +156,43 @@ Your browser does not support the <code>audio</code> element.
 </TMPL_IF>
 </TMPL_UNLESS>
 
+<?php
+ $lastfmurl = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=stinkee&api_key=ba28474ed8ca598dce90eb9591bbfed6";
+ $lastfmxml = simplexml_load_file($lastfmurl);
+ echo "<p>&nbsp;</p><p>The last songs I may have listened to may have been:</p>";
+ for($i=1;$i<=24;$i++)
+ {
+ $lastfmtrack =$lastfmxml->recenttracks->track[$i];
+
+ if(strlen($lastfmtrack->artist) > 0)
+ {
+ echo "<div style=\"height:100px;float:left;width:420px;\"><div style=\"float:left;padding:7px;\"><a href=\"http://www.last.fm/user/stinkee/library\"><img height=80 width=80 src='".$lastfmtrack->image[2]."' border=0></a></div>";
+ echo "<div style=\"padding:7px;margin-left:5px;\">".$lastfmtrack->artist."<br>".$lastfmtrack->name."<br>".$lastfmtrack->album."</div></div>";
+ }
+ }
+ ?>
+<!--//
+<div style="clear:both;">
+<p>&nbsp;</p>
+<p>The last tweets I may have tweeted may have been:</p>
+
+<a class="twitter-timeline" data-width="400" data-height="300" href="https://twitter.com/radiodavidj">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<div style="clear:both;">
+<p>&nbsp;</p>
+<p>The last links of interest I've found may be:</p>
+<?php
+$xml = simplexml_load_file('http://feeds.del.icio.us/v2/rss/stinkee/weblink');
+$currentinfo = $xml->xpath('/rss/channel/item');
+
+for($i = 1; $i <= 3; $i++) {
+?>
+
+<p><a href="<?php echo $currentinfo[$i]->link; ?>"><?php echo $currentinfo[$i]->title; ?></a> - <?php echo $currentinfo[$i]->description; ?></p>
+
+<?php } ?>
+</div>
+//-->
 </div>
 
 <TMPL_IF HTML5><footer<TMPL_ELSE><div</TMPL_IF> id="footer" class="pagefooter" role="contentinfo">

@@ -1,16 +1,6 @@
 
-Hello!  My name is David Johnson.  I like to do stuff like be [on the radio](http://www.wcbn.org/) and [go to work](http://www.perficient.com/) and [[listen to music|music]].  
+This site dedicated to a very loved and lovable dog.
 
-The information here is sparse.  I am still working out the learning of the ikiwiki.
+<img src="img/basecain.jpg" height="300" width="400" alt="that face!">
 
-You may have come here looking for the [[Radio Show|radiodavidj]] I do weekly on Thursday nights from 8 to 10.
-
-I will be on the air Thursday nights from 8 to 10 all summer long on [WCBN](http://www.wcbn.org/schedule/).
-
-Things I want to do here:
-
-* Exploit the last.fm API to display my listened to tracks.
-* Apply some more CSS.  (not very specific, eh?)
-
-I have some goals.  Mostly about learning.
-
+[[!pagetemplate template="main_page_php.tmpl"]]
