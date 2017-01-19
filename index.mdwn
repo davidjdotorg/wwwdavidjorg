@@ -1,6 +1,5 @@
+I've turned editing on.
 
-This site dedicated to a very loved and lovable dog.
-
-<img src="img/basecain.jpg" height="300" width="400" alt="that face!">
+I'm learning markup.
 
 [[!pagetemplate template="main_page_php.tmpl"]]
