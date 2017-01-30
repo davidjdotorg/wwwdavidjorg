@@ -2,6 +2,6 @@
 
 Hello!  My name is David Johnson.  I was once described by someone as profoundly reasonable.  This thrilled me.  It is an honor.
 
-I encourage you to please start consuming the news program [[http://www.democracynow.org|Democracy Now]] in whatever manner is best for you.  Even if you just listen to the headlines, Amy Goodman is a true American Patriot for Democracy.  The show is very informative.  Amy Goodman, thank you for years of journalism.
+I encourage you to please start consuming the news program [[http://www.democracynow.org/|Democracy Now]] in whatever manner is best for you.  Even if you just listen to the headlines, Amy Goodman is a true American Patriot for Democracy.  The show is very informative.  Amy Goodman, thank you for years of journalism.
 
 [[!pagetemplate template="main_page_php.tmpl"]]
