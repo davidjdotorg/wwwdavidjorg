@@ -1,5 +1,3 @@
-#### Public Site Of Person Living Privately
-
 Darkness has conquered Brad and Janet.
 
 [[!pagetemplate template="main_page_php.tmpl"]]
