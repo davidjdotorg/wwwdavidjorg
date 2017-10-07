@@ -6,5 +6,4 @@ pages="blog/*"
 description="Sporadic Foibles"
 ]]
 [[!meta title="David J and his Sporadic Foibles"]]
-
-Do I just the next entry here?  Probably not.
+[[!pagetemplate template="main_page_php.tmpl"]]
