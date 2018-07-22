@@ -1,0 +1,8 @@
+# AWS Certification
+*davidj*
+
+I saw [this advertisement](https://www.udemy.com/aws-certified-solutions-architect-associate/) over a weekend.  I was surprised at how interested I suddenly became in a certification.  
+
+I'm currently running two instances of an AWS server.  One for atlassian products and another for an online modeling (UML) application.  I set the virtual machines up with very little understanding of what I was doing or why I was doing it.
+
+The course is inexpensive enough that I'm hoping the videos will alert me if I should pursue the certification or just learn enough to do a better job.

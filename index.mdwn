@@ -1,3 +1,5 @@
-Oh, good. It's you. Please contact me as soon as possible. Darkness has conquered Brad and Janet.
+```
+Soon it will be you.
+```
 
 [[!pagetemplate template="main_page_php.tmpl"]]
